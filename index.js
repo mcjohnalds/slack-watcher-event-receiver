@@ -1,6 +1,6 @@
 require("dotenv").config();
 const pubsub = require("@google-cloud/pubsub")({
-  projectId: process.env.GOOGLE_PROJECT_ID,
+  projectId: process.env.GOOGLE_PROJECT,
   keyFilename: process.env.KEY_FILE
 });
 const topic = pubsub.topic(process.env.PUBSUB_TOPIC);
